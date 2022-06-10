@@ -1,0 +1,48 @@
+Mar 25 21:01:44.781 HYPERVISOR: Release 0.2.21-amd64/Linux (tag 2019071212)
+Mar 25 21:01:44.781 HYPERVISOR: Started on IP = localhost, TCP port = 58225.
+Mar 25 21:01:44.792 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 25 21:01:44.792 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ubuntu/Desktop/Beykoz_Uni/Computer_Networks/GNS3/Projects/1/project-files/dynamips 
+Mar 25 21:01:44.792 GENERAL: working_dir=/home/ubuntu/Desktop/Beykoz_Uni/Computer_Networks/GNS3/Projects/1/project-files/dynamips
+Mar 25 21:01:44.793 HYPERVISOR: exec_cmd: hypervisor working_dir /home/ubuntu/Desktop/Beykoz_Uni/Computer_Networks/GNS3/Projects/1/project-files/dynamips/00bdc2a5-1837-423a-ad95-f55556fe9473 
+Mar 25 21:01:44.793 GENERAL: working_dir=/home/ubuntu/Desktop/Beykoz_Uni/Computer_Networks/GNS3/Projects/1/project-files/dynamips/00bdc2a5-1837-423a-ad95-f55556fe9473
+Mar 25 21:01:44.793 HYPERVISOR: exec_cmd: vm create ESW2 8 c3600 
+Mar 25 21:01:44.793 VM: VM ESW2 created.
+Mar 25 21:01:44.793 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5007 
+Mar 25 21:01:44.793 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW2 
+Mar 25 21:01:44.794 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Mar 25 21:01:44.794 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:01:44.794 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x605d3700 
+Mar 25 21:01:44.795 HYPERVISOR: exec_cmd: vm set_ios ESW2 /home/ubuntu/GNS3/images/IOS/c3640-ik9o3s-mz124-13.image 
+Mar 25 21:01:44.795 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW2 cc08.cba7.0000 
+Mar 25 21:01:44.796 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Mar 25 21:01:44.796 HYPERVISOR: exec_cmd: vm set_ram ESW2 192 
+Mar 25 21:01:44.796 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:01:44.796 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 0 0 NM-16ESW 
+Mar 25 21:01:49.998 HYPERVISOR: exec_cmd: nio create_udp udp-def3c8c2-043a-47cb-9e74-662531612add 10098 127.0.0.1 10099 
+Mar 25 21:01:50.215 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 0 udp-def3c8c2-043a-47cb-9e74-662531612add 
+Mar 25 21:01:50.215 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:01:50.314 HYPERVISOR: exec_cmd: nio create_udp udp-f57d451b-5e6a-470f-ac9d-5b3146dd5d88 10102 127.0.0.1 10103 
+Mar 25 21:01:50.315 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 1 udp-f57d451b-5e6a-470f-ac9d-5b3146dd5d88 
+Mar 25 21:01:50.316 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:01:50.408 HYPERVISOR: exec_cmd: nio create_udp udp-c99fb14f-7963-48ab-8fc1-d4b906296b44 10106 127.0.0.1 10107 
+Mar 25 21:01:50.410 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 2 udp-c99fb14f-7963-48ab-8fc1-d4b906296b44 
+Mar 25 21:01:50.410 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:01:50.739 HYPERVISOR: exec_cmd: nio create_udp udp-f5efc5b4-6244-4297-8f5f-46e395a1820f 10112 127.0.0.1 10113 
+Mar 25 21:01:50.741 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 3 udp-f5efc5b4-6244-4297-8f5f-46e395a1820f 
+Mar 25 21:01:50.741 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:02:44.574 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Mar 25 21:02:44.577 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 /home/ubuntu/Desktop/Beykoz_Uni/Computer_Networks/GNS3/Projects/1/project-files/dynamips/c3640-ik9o3s-mz124-13.image-192.ghost 
+Mar 25 21:02:44.594 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:02:44.597 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i8_startup-config.cfg 
+Mar 25 21:02:44.599 HYPERVISOR: exec_cmd: vm start ESW2 
+Mar 25 21:03:21.063 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:03:21.064 HYPERVISOR: exec_cmd: vm stop ESW2 
+Mar 25 21:03:21.191 VM: VM ESW2 shutdown.
+Mar 25 21:03:21.192 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Mar 25 21:03:23.201 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Mar 25 21:03:23.201 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Mar 25 21:03:23.202 HYPERVISOR: exec_cmd: vm delete ESW2 
+Mar 25 21:03:23.202 VM: VM ESW2 destroyed.
+Mar 25 21:03:23.203 HYPERVISOR: exec_cmd: hypervisor stop 
+Mar 25 21:03:23.384 HYPERVISOR: Stopped.
+Mar 25 21:03:23.384 GENERAL: reset done.
